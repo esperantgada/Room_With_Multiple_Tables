@@ -60,7 +60,7 @@ class AllCourseByStudentNameFragment : Fragment() {
             for (course in it){
                 adapter.submitList(course.courses)
             }
-            Log.d(TAG, "ESPERANT IS A COMPETENT JUNIOR KOTLIN ANDROID DEVELOPER ")
+            Log.d(TAG, "The returned list size is ${it.size}")
         }
     }
 
