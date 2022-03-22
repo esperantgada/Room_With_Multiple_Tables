@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Room Multiple Tables</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">START</string>
+    <string name="add_student">Add student</string>
+    <string name="school">School</string>
+    <string name="director">Director</string>
+    <string name="student">Student</string>
+    <string name="course">Course</string>
+    <string name="student_and_course">Student and Course</string>
+    <string name="schools_list">Schools List</string>
+    <string name="directors_list">Directors List</string>
+    <string name="students_list">Students List</string>
+    <string name="courses_list">Courses List</string>
+    <string name="students_and_courses_list">Students and Courses List</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="course_todo">Enter the course name and duration in these fields and save them</string>
+    <string name="director_todo">Enter Director name and his school in these fields and save them</string>
+    <string name="school_todo">Enter School name and its location in these fields and save them</string>
+    <string name="student_todo">Enter Student name, his semester and school in these fields and save them</string>
+    <string name="student_course_todo">Enter Student name and his course in these fields and save them</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="course_name">Course name</string>
+    <string name="course_duration">Course duration</string>
+    <string name="save_course">SAVE COURSE</string>
+    <string name="save_director">SAVE DIRECTOR</string>
+    <string name="director_name">Director name</string>
+    <string name="director_school_name">Director school name</string>
+    <string name="save_school">SAVE SCHOOL</string>
+    <string name="school_location">School location</string>
+    <string name="school_name">School name</string>
+    <string name="student_name">Student name</string>
+    <string name="student_school_name">Student school name</string>
+    <string name="student_semester">Student semester</string>
+    <string name="save_student">SAVE STUDENT</string>
+    <string name="student_course_name">Student course name</string>
+    <string name="save_student_and_course">SAVE STUDENT AND COURSE</string>
+    <string name="search">SEARCH</string>
+    <string name="get_all_courses_by_student_name">Get all courses by student name</string>
+    <string name="get_all_students_by_course_name">Get all students by course name</string>
+    <string name="get_all_directors_by_school_name">Get all directors by school name</string>
+    <string name="get_all_students_by_school_name">Get all students by school name</string>
+    <string name="semester_3">Semester %d</string>
+</resources>

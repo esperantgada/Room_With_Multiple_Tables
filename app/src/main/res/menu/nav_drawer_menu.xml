@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/schoolListFragment"
+        android:title="@string/schools_list"
+        android:icon="@drawable/ic_school"/>
+
+    <item
+        android:id="@+id/directorListFragment"
+        android:title="@string/directors_list"
+        android:icon="@drawable/ic_director"/>
+
+    <item
+        android:id="@+id/studentListFragment"
+        android:title="@string/students_list"
+        android:icon="@drawable/ic_student"/>
+
+    <item
+        android:id="@+id/courseListFragment"
+        android:title="@string/courses_list"
+        android:icon="@drawable/ic_subject"/>
+
+    <item
+        android:id="@+id/studentAndCourseListFragment"
+        android:title="@string/students_and_courses_list"
+        android:icon="@drawable/ic_student_course"/>
+
+    <item
+        android:id="@+id/allCourseByStudentNameFragment"
+        android:title="@string/get_all_courses_by_student_name"
+        android:icon="@drawable/ic_select_all"/>
+
+    <item
+        android:id="@+id/allStudentsByCourseNameFragment"
+        android:title="@string/get_all_students_by_course_name"
+        android:icon="@drawable/ic_select_all"/>
+
+    <item
+        android:id="@+id/allDirectorsBySchoolNameFragment"
+        android:title="@string/get_all_directors_by_school_name"
+        android:icon="@drawable/ic_select_all"/>
+
+    <item
+        android:id="@+id/allStudentsBySchoolNameFragment"
+        android:title="@string/get_all_students_by_school_name"
+        android:icon="@drawable/ic_select_all"/>
+
+</menu>

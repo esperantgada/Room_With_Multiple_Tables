@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addSchoolFragment"
+        android:title="@string/school"
+        android:icon="@drawable/ic_school"/>
+
+    <item
+        android:id="@+id/addDirectorFragment"
+        android:title="@string/director"
+        android:icon="@drawable/ic_director"/>
+
+    <item
+        android:id="@+id/addStudentFragment"
+        android:title="@string/student"
+        android:icon="@drawable/ic_student"/>
+
+    <item
+        android:id="@+id/addCourseFragment"
+        android:title="@string/course"
+        android:icon="@drawable/ic_subject"/>
+
+    <item
+        android:id="@+id/addStudentAndCourseFragment"
+        android:title="@string/student_and_course"
+        android:icon="@drawable/ic_student_course"/>
+</menu>

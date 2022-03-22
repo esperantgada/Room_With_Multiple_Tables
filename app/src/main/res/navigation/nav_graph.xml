@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addSchoolFragment">
+
+    <fragment
+        android:id="@+id/addSchoolFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AddSchoolFragment"
+        android:label="Add School"
+        tools:layout="@layout/fragment_add_school" >
+        <action
+            android:id="@+id/action_addSchoolFragment_to_schoolListFragment"
+            app:destination="@id/schoolListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addDirectorFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AddDirectorFragment"
+        android:label="Add Director"
+        tools:layout="@layout/fragment_add_director" >
+        <action
+            android:id="@+id/action_addDirectorFragment_to_directorListFragment"
+            app:destination="@id/directorListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AddStudentFragment"
+        android:label="Add Student"
+        tools:layout="@layout/fragment_add_student" >
+        <action
+            android:id="@+id/action_addStudentFragment_to_studentListFragment"
+            app:destination="@id/studentListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addCourseFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AddCourseFragment"
+        android:label="Add Course"
+        tools:layout="@layout/fragment_add_course" >
+        <action
+            android:id="@+id/action_addCourseFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addStudentAndCourseFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AddStudentAndCourseFragment"
+        android:label="Add Student and Course"
+        tools:layout="@layout/fragment_add_student_and_course" >
+        <action
+            android:id="@+id/action_addStudentAndCourseFragment_to_studentAndCourseListFragment"
+            app:destination="@id/studentAndCourseListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/schoolListFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.SchoolListFragment"
+        android:label="School list"
+        tools:layout="@layout/fragment_school_list" />
+
+
+    <fragment
+        android:id="@+id/directorListFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.DirectorListFragment"
+        android:label="Director list"
+        tools:layout="@layout/fragment_director_list" />
+
+
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.CourseListFragment"
+        android:label="Course list"
+        tools:layout="@layout/fragment_course_list" />
+
+
+    <fragment
+        android:id="@+id/studentAndCourseListFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.StudentAndCourseListFragment"
+        android:label="Student and Course list"
+        tools:layout="@layout/fragment_student_and_course_list" />
+
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.StudentListFragment"
+        android:label="Student list"
+        tools:layout="@layout/fragment_student_list" />
+    <fragment
+        android:id="@+id/allCourseByStudentNameFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AllCourseByStudentNameFragment"
+        android:label="All courses by student name"
+        tools:layout="@layout/fragment_all_course_by_student_name" />
+    <fragment
+        android:id="@+id/allDirectorsBySchoolNameFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AllDirectorsBySchoolNameFragment"
+        android:label="All directors by school name"
+        tools:layout="@layout/fragment_all_directors_by_school_name" />
+    <fragment
+        android:id="@+id/allStudentsByCourseNameFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AllStudentsByCourseNameFragment"
+        android:label="All students by course name"
+        tools:layout="@layout/fragment_all_students_by_course_name" />
+    <fragment
+        android:id="@+id/allStudentsBySchoolNameFragment"
+        android:name="eg.esperantgada.roommultipletables.fragment.AllStudentsBySchoolNameFragment"
+        android:label="All students by school name"
+        tools:layout="@layout/fragment_all_students_by_school_name" />
+
+
+</navigation>
