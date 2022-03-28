@@ -43,7 +43,7 @@ class CourseAdapter : PagingDataAdapter<Course, CourseAdapter.CourseViewHolder> 
     companion object DiffCallback : DiffUtil.ItemCallback<Course>(){
         override fun areItemsTheSame(
             oldItem: Course,
-            newItem: Course): Boolean = oldItem.courseName == newItem.courseName
+            newItem: Course): Boolean = oldItem.courseDuration == newItem.courseName
 
         override fun areContentsTheSame(
             oldItem: Course,

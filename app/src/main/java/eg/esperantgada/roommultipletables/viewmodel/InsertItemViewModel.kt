@@ -30,7 +30,7 @@ class InsertItemViewModel @Inject constructor(
         return School(
             schoolName = schoolName,
             schoolLocation = location
-        )
+         )
     }
 
     fun insertNewSchool(schoolName : String, location: String){

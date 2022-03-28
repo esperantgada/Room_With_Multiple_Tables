@@ -8,12 +8,18 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
+import androidx.work.workDataOf
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import eg.esperantgada.roommultipletables.R
 import eg.esperantgada.roommultipletables.databinding.FragmentAddSchoolBinding
+import eg.esperantgada.roommultipletables.notification.Notification
 import eg.esperantgada.roommultipletables.viewmodel.InsertItemViewModel
+import eg.esperantgada.roommultipletables.worker.SchoolWorker
+import java.util.concurrent.TimeUnit
 
 
 @AndroidEntryPoint
@@ -44,6 +50,16 @@ class AddSchoolFragment : Fragment() {
                     binding.schoolLocation.text.toString()
                 )
 
+                val workQuest = OneTimeWorkRequestBuilder<SchoolWorker>()
+                    .setInitialDelay(50, TimeUnit.SECONDS)
+                    .setInputData(workDataOf(
+                        "title" to "Add school",
+                        "message" to "A new school is added : ${binding.schoolName.text.toString()}"
+                    )).build()
+
+                WorkManager.getInstance().enqueue(workQuest)
+
+               // Notification(requireContext()).onCreateNotification("Add school", "A new school is added")
                 clearUserInput()
                 showSnackBar()
 
