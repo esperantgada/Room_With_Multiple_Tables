@@ -7,6 +7,6 @@ class Constants {
         const val NOTIFICATION_ID = 1
         const val NAME = "Notification title"
         const val DESCRIPTION_TEXT = "Notification description"
-        const val BIG_TEXT = "I'm a young Android Developer from Google Africa Developers Scholarship"
+        const val BIG_TEXT = "I'm a young Android Developer through Google Africa Developers Scholarship program"
     }
 }

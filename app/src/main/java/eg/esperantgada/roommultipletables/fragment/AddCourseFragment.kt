@@ -71,7 +71,7 @@ class AddCourseFragment : Fragment() {
     }
 
     private fun showToast(){
-        Toast.makeText(requireContext(), "Missing value! Please add values", Toast.LENGTH_LONG)
+        Toast.makeText(requireContext(), "Missing value! Please add required values", Toast.LENGTH_LONG)
             .show()
     }
 

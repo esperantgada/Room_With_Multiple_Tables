@@ -64,7 +64,7 @@ class AddDirectorFragment : Fragment() {
     }
 
     private fun showToast(){
-        Toast.makeText(requireContext(), "Missing value! Please enter values", Toast.LENGTH_LONG)
+        Toast.makeText(requireContext(), "Missing value! Please enter required values", Toast.LENGTH_LONG)
             .show()
     }
 

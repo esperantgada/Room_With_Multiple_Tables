@@ -16,7 +16,6 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import eg.esperantgada.roommultipletables.R
 import eg.esperantgada.roommultipletables.databinding.FragmentAddSchoolBinding
-import eg.esperantgada.roommultipletables.notification.Notification
 import eg.esperantgada.roommultipletables.viewmodel.InsertItemViewModel
 import eg.esperantgada.roommultipletables.worker.SchoolWorker
 import java.util.concurrent.TimeUnit
@@ -33,7 +32,7 @@ class AddSchoolFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
 
         _binding = FragmentAddSchoolBinding.inflate(inflater)
@@ -50,16 +49,17 @@ class AddSchoolFragment : Fragment() {
                     binding.schoolLocation.text.toString()
                 )
 
-                val workQuest = OneTimeWorkRequestBuilder<SchoolWorker>()
+                //Create a workRequest
+                val workRequest = OneTimeWorkRequestBuilder<SchoolWorker>()
                     .setInitialDelay(50, TimeUnit.SECONDS)
                     .setInputData(workDataOf(
                         "title" to "Add school",
                         "message" to "A new school is added : ${binding.schoolName.text.toString()}"
                     )).build()
 
-                WorkManager.getInstance().enqueue(workQuest)
+                //Launch the workRequest handled by WorkManager
+                WorkManager.getInstance().enqueue(workRequest)
 
-               // Notification(requireContext()).onCreateNotification("Add school", "A new school is added")
                 clearUserInput()
                 showSnackBar()
 
@@ -82,7 +82,7 @@ class AddSchoolFragment : Fragment() {
     }
 
     private fun showToast(){
-        Toast.makeText(requireContext(), "Missing value! Please add values", Toast.LENGTH_LONG)
+        Toast.makeText(requireContext(), "Missing value! Please add required values", Toast.LENGTH_LONG)
             .show()
     }
 
